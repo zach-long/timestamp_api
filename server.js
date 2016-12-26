@@ -11,9 +11,6 @@ var message = 'Server listening on port ' + port + ' . . .'
 
 var welcomeMessage = "Welcome. If you're accessing this directly instead of utilzing it as an API, just append a date to the root url to verify and convert it."
 
-app.use((request, response, next) => {
-
-})
 // set default root handling
 app.get('/', (request, response) => {
 	response.send(welcomeMessage)
