@@ -7,20 +7,18 @@ var dataAnchor = document.getElementById('live-sample');
 // URL for the API call
 var url = 'https://fierce-beyond-84088.herokuapp.com/whoami';
 // error message
-var errMsg = "Unable to retrieve data"
+var errMsg = "Unable to retrieve data";
 
 // the HTTP request
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
   if (xhr.readyState == 4) {
     console.log("request successful");
-    //location.innerHTML = xhr.responseText;
-    console.log(xhr.responseText);
+    dataAnchor.innerHTML = xhr.responseText;
   } else {
     console.log("request failed");
-    //location.innerHTML = errMsg;
-    console.log("");
+    dataAnchor.innerHTML = errMsg;
   }
-}
-//xhr.open('GET', url, true);
-//xhr.send(null);
+};
+xhr.open('GET', url, true);
+xhr.send(null);
