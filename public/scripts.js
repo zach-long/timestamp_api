@@ -1,9 +1,9 @@
-'use strict'
+//'use strict'
 
 console.log("Client side script loaded");
 
 // DOM location to append XMLHttp result
-var location = document.getElementById('live-sample');
+var dataAnchor = document.getElementById('live-sample');
 // URL for the API call
 var url = 'https://fierce-beyond-84088.herokuapp.com/whoami';
 // error message
