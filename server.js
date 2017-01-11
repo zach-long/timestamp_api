@@ -7,7 +7,7 @@ const express = require('express'),
 const timeStamp = require('./app/app.js')
 
 // set public directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')))
 
 // the app
 app.use('/', timeStamp)
