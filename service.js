@@ -24,7 +24,7 @@ module.exports = main => {
 			output.natural = moment.unix(q).format('MMMM DD, YYYY')
 			output.unix = q
 		} else {
-			alert('Invalid Date')
+			console.log('Invalid Date')
 		}
 
 		response.send(output)
